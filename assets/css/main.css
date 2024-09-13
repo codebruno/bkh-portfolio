@@ -1,0 +1,457 @@
+:root {
+    /* Background colors */
+    --bg-page: #e0e5ec;       /* Cor de fundo para toda a página */
+    --bg-header: #2f3559;     /* Cor de fundo para o header/nav */
+    --bg-secondary: #384252;  /* Cor secundária para hover ou destaques */
+    --bg-highlight: #b9f1d6;  /* Cor de destaque (para elementos especiais) */
+
+    /* Font colors */
+    --font-main: #fff9f9;     /* Cor principal da fonte (texto geral) */
+    --font-secondary: #74819d;/* Cor secundária da fonte (menus, etc.) */
+    --font-highlight: #b9f1d6;/* Cor de destaque para texto importante */
+
+    /* Hover effects */
+    --hover-bg: #3b3f49;      /* Cor de fundo ao passar o mouse */
+    --hover-font: #b9f1d6;    /* Cor da fonte ao passar o mouse */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-main);
+    background-color: var(--bg-page); /* Fundo para a página */
+    padding-top: 80px; /* Espaço extra para o header fixo */
+    text-decoration: none; /* Remove decoração de todos os textos */
+    padding-top: 70px; /* Deve corresponder à altura do seu header fixo */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 115px; /* Ajuste para a altura do seu header */
+}
+
+.section {
+    padding-top: 80px; /* Ajuste conforme a altura do seu header */
+}
+
+/* Header */
+header {
+    background-color: var(--bg-header); /* Fundo específico para o header */
+}
+
+.navbar-nav .nav-link {
+    color: var(--font-secondary); /* Cor do texto no menu */
+    text-decoration: none; /* Remove decoração dos links */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-font); /* Cor do texto no hover */
+    text-decoration: none; /* Garante que não haverá decoração no hover */
+}
+
+/* Links Especiais */
+.navbar-brand {
+    font-weight: 700;
+    color: var(--font-highlight); /* Destaque para a logo */
+    font-size: 1.5rem;
+    text-decoration: none; /* Remove sublinhado da logo */
+}
+
+.navbar-brand:hover {
+    color: var(--hover-font); /* Logo no hover */
+    text-decoration: none; /* Garante que a logo não tenha decoração no hover */
+}
+
+.logo-svg {
+    width: 200px; /* Largura da logo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Outras seções */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-main); /* Títulos com cor principal */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Sombra nos textos para maior destaque */
+    text-decoration: none; /* Remove decoração dos títulos */
+}
+
+p {
+    color: var(--font-secondary); /* Parágrafos com cor secundária */
+    text-decoration: none; /* Remove decoração dos parágrafos */
+}
+
+a {
+    color: var(--font-highlight); /* Links com cor de destaque */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+a:hover {
+    color: var(--hover-font); /* Links no hover */
+    text-decoration: none; /* Garante que não tenha decoração no hover */
+}
+
+/* Botões */
+button, .btn {
+    background-color: var(--bg-highlight);
+    color: var(--bg-header);
+    border: none;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove decoração de botões */
+}
+
+button:hover, .btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-font);
+    text-decoration: none; /* Garante que botões não tenham decoração no hover */
+}
+
+
+h1, .title-seo {
+    color: var(--font-main);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Sombra nos textos */
+}
+
+p.lead {
+    font-size: 1.25rem;
+    color: var(--font-secondary);
+}
+
+a.btn {
+    background-color: var(--bg-highlight);
+    color: var(--bg-header);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+a.btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-font);
+}
+
+img.img-fluid {
+    border-radius: 8px;
+}
+
+.services-section {
+    background-color: var(--bg-page);
+    padding: 2rem 0;
+}
+
+.section-title {
+    color: var(--font-main);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: var(--font-secondary);
+    font-size: 1.25rem;
+}
+
+.card-service {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+    color: var(--bg-highlight);
+}
+
+.service-title {
+    color: var(--font-main);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-description {
+    color: var(--font-secondary);
+    font-size: 1rem;
+}
+
+/* Fundo da seção 'Quem Somos' */
+.about-section {
+    background-color: var(--bg-secondary); /* Cor secundária para o fundo da seção */
+    color: var(--font-main); /* Cor principal da fonte para o texto */
+    padding: 3rem 0; /* Adicionando um pouco de padding para espaçamento */
+}
+
+/* Garantindo que todos os cards tenham o mesmo tamanho */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-founder {
+    background-color: var(--bg-page); /* Cor de fundo para os cards */
+    color: var(--font-main); /* Cor da fonte dos cards */
+    padding: 5%;
+    border: 1px solid var(--bg-header); /* Borda escura para criar contraste sutil */
+    border-radius: 5%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card-founder:hover {
+    background-color: var(--hover-bg); /* Cor de fundo ao passar o mouse */
+    color: var(--hover-font); /* Cor da fonte ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.founder-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%; /* Tornar a imagem circular */
+    border: 2px solid var(--bg-highlight); /* Borda clara para destacar a imagem */
+}
+
+.founder-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--font-highlight); /* Cor de destaque para o nome */
+}
+
+.founder-description {
+    font-size: 0.9rem;
+    color: var(--font-main); /* Texto claro */
+}
+
+/* Estilo para o título e texto da seção */
+.about-section {
+    background-color: var(--bg-secondary); /* Fundo da seção */
+    border-radius: 10px;
+    color: var(--font-main); /* Cor do texto */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2rem;
+    color: var(--font-highlight); /* Cor de destaque para o título */
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card-founder {
+    background-color: var(--bg-page); /* Fundo dos cards */
+    color: var(--font-main); /* Texto dos cards */
+    padding: 5%;
+    border: 1px solid var(--bg-header); /* Borda dos cards */
+    border-radius: 5%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card-founder:hover {
+    background-color: var(--hover-bg); /* Fundo ao passar o mouse */
+    color: var(--hover-font); /* Cor do texto ao passar o mouse */
+    transform: scale(1.02); /* Redução do zoom */
+}
+
+.founder-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Imagem circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid var(--bg-highlight); /* Borda clara */
+}
+
+.founder-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--font-secondary); /* Cor inicial do nome */
+    transition: color 0.3s ease-in-out;
+}
+
+.founder-description {
+    font-size: 0.9rem;
+    color: var(--font-secondary); /* Cor inicial do parágrafo */
+    transition: color 0.3s ease-in-out;
+}
+
+.card-founder:hover .founder-name {
+    color: var(--bg-highlight); /* Cor verde ao passar o mouse */
+}
+
+.card-founder:hover .founder-description {
+    color: var(--font-main); /* Texto mais claro ao passar o mouse */
+}
+
+.about-text {
+    margin-top: 2rem;
+    text-align: left;
+    color: var(--font-secondary); /* Texto secundário */
+}
+/* Seção Portfólio */
+.portfolio-section {
+    background-color: var(--bg-page); /* Cor de fundo da seção */
+    color: var(--font-main); /* Cor principal da fonte */
+    padding: 3rem 0; /* Espaçamento vertical */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--font-highlight); /* Cor de destaque para o título */
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--font-secondary); /* Cor secundária para o subtítulo */
+}
+
+/* Cards de Portfólio */
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-header); /* Cor de fundo dos cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para os cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-info {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência para o texto */
+    color: var(--font-main); /* Cor do texto nos cards */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.portfolio-card:hover .portfolio-info {
+    opacity: 1; /* Exibe as informações ao passar o mouse */
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.portfolio-description {
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--bg-highlight); /* Cor do botão */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-bg); /* Cor do botão ao passar o mouse */
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--bg-header);
+    color: var(--font-main);
+    padding: 2rem 0;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li i {
+    margin-right: 0.5rem;
+}
+
+.footer a {
+    color: var(--font-main);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--font-highlight);
+}
+
+/* Ícone de WhatsApp fixo */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--bg-highlight);
+    color: var(--font-main);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.whatsapp-icon:hover {
+    background-color: var(--hover-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Seta para cima */
+.scroll-to-top {
+    display: inline-block;
+    background-color: var(--bg-highlight);
+    color: var(--font-main);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--hover-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
