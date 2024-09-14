@@ -34,7 +34,7 @@ html {
     padding-top: 80px; /* Ajuste conforme a altura do seu header */
 }
 
-/* Header */
+/*********************************************** Header ***********************************************/
 header {
     background-color: var(--bg-header); /* Fundo específico para o header */
 }
@@ -136,7 +136,7 @@ a.btn:hover {
 img.img-fluid {
     border-radius: 8px;
 }
-
+/********************************************** Seção Services **********************************************/
 .services-section {
     background-color: var(--bg-page);
     padding: 2rem 0;
@@ -180,7 +180,7 @@ img.img-fluid {
     font-size: 1rem;
 }
 
-/* Fundo da seção 'Quem Somos' */
+/*********************************************** Quem Somos ***********************************************/
 .about-section {
     background-color: var(--bg-secondary); /* Cor secundária para o fundo da seção */
     color: var(--font-main); /* Cor principal da fonte para o texto */
@@ -304,10 +304,10 @@ img.img-fluid {
 
 .about-text {
     margin-top: 2rem;
-    text-align: left;
+    text-align: center;
     color: var(--font-secondary); /* Texto secundário */
 }
-/* Seção Portfólio */
+/********************************************** Seção Portfólio ********************************************** */
 .portfolio-section {
     background-color: var(--bg-page); /* Cor de fundo da seção */
     color: var(--font-main); /* Cor principal da fonte */
@@ -381,7 +381,7 @@ img.img-fluid {
 }
 
 
-/* Footer */
+/*********************************************** Footer ***********************************************/
 .footer {
     background-color: var(--bg-header);
     color: var(--font-main);
