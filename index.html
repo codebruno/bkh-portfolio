@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -20,16 +22,27 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a 
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="navbar-brand" href="/">
                     <img src="/assets/image/logo.svg" alt="Logo BKH DevXpert" class="logo-svg">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div 
+                data-aos="fade-left" 
+                data-aos-duration="3000"
+                data-aos-delay="800"
+                class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a 
+                            data-aos="fade-left" 
+                            data-aos-duration="3000"
+                            data-aos-delay="500"
+                            class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicos">Serviços</a>
@@ -53,19 +66,35 @@
         <!-- Seção Home -->
         <section id="home" class="row align-items-center home-section">
             <!-- Coluna da Imagem -->
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/600x400" alt="Imagem fictícia" class="img-fluid">
+            <div  class="col-md-6">
+                <img 
+                data-aos="fade-right" 
+                data-aos-duration="3000"
+                data-aos-delay="800"
+                src="https://via.placeholder.com/600x400" alt="Imagem fictícia" class="img-fluid">
             </div>
 
             <!-- Coluna do Título e Parágrafo -->
             <div class="col-md-6">
                 <article>
-                    <h1 class="title-seo">Criação de Landing Pages de Alta Conversão</h1>
-                    <p class="lead">
+                    <h1
+                    data-aos="fade-left" 
+                    data-aos-duration="1000"
+                    class="title-seo">Criação de Landing Pages de Alta Conversão</h1>
+                    <p
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" 
+                    data-aos-duration="3000"
+                    class="lead">
                         No BKH DevXpert, criamos landing pages profissionais e otimizadas para garantir que seu negócio alcance mais clientes. 
                         Com um design moderno e estratégias de SEO, sua presença digital será inigualável.
                     </p>
-                    <a href="#contato" class="btn btn-primary mt-3">Entre em Contato</a>
+                    <a 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" 
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                    href="#contato" class="btn btn-primary mt-3">Entre em Contato</a>
                 </article>
             </div>
         </section>
@@ -73,17 +102,34 @@
         <!-- Seção de Serviços -->
         <section id="servicos" class="services-section py-5">
             <div class="text-center mb-5">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <p class="section-subtitle">O que oferecemos para você</p>
+                <h2 
+                data-aos="fade-up-right"
+                data-aos-duration="3000"
+                data-aos-delay="400"
+                class="section-title">Nossos Serviços</h2>
+                <p 
+                data-aos="fade-up-right"
+                data-aos-duration="3000"
+                data-aos-delay="400"
+                class="section-subtitle">O que oferecemos para você</p>
             </div>
 
             <div class="row g-4">
                 <div class="col-md-4">
-                    <article class="card-service text-center">
+                    <article 
+                    data-aos="zoom-in" 
+                    data-aos-delay="200"
+                    data-aos-duration="3000"
+                    class="card-service text-center">
                         <div class="icon-box mb-3">
                             <i class="bi bi-laptop" style="font-size: 3rem;"></i>
                         </div>
-                        <h3 class="service-title">Criação de Landing Pages</h3>
+                        <h3 
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                        data-aos-delay="300"
+                        class="service-title">Criação de Landing Pages</h3>
                         <p class="service-description">
                             Desenvolvemos landing pages otimizadas para conversão, garantindo que seu negócio tenha destaque online.
                         </p>
@@ -91,11 +137,20 @@
                 </div>
 
                 <div class="col-md-4">
-                    <article class="card-service text-center">
+                    <article 
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    data-aos-duration="3000"
+                    class="card-service text-center">
                         <div class="icon-box mb-3">
                             <i class="bi bi-graph-up-arrow" style="font-size: 3rem;"></i>
                         </div>
-                        <h3 class="service-title">Otimização para SEO</h3>
+                        <h3 
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                        data-aos-delay="300"
+                        class="service-title">Otimização para SEO</h3>
                         <p class="service-description">
                             Melhoramos a visibilidade do seu site nos motores de busca, aumentando o tráfego orgânico e as conversões.
                         </p>
@@ -103,11 +158,20 @@
                 </div>
 
                 <div class="col-md-4">
-                    <article class="card-service text-center">
+                    <article 
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-aos-duration="3000"
+                    class="card-service text-center">
                         <div class="icon-box mb-3">
                             <i class="bi bi-phone" style="font-size: 3rem;"></i>
                         </div>
-                        <h3 class="service-title">Sites Responsivos</h3>
+                        <h3 
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"
+                        data-aos-delay="300"
+                        class="service-title">Sites Responsivos</h3>
                         <p class="service-description">
                             Criamos sites que se adaptam a todos os dispositivos, proporcionando uma experiência perfeita em mobile, tablets e desktops.
                         </p>
@@ -291,9 +355,14 @@
         </div>
     </footer>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false, // A animação se repetirá sempre que o elemento entrar na viewport
+        });
+    </script>
 </body>
 </html>
