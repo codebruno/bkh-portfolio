@@ -9,7 +9,6 @@
    --font-main: #e5e9f0;     /* Fonte principal (branco suave, quase cinza) */
    --font-secondary: #cbd5e1;/* Fonte secundária (cinza claro para subtítulos e menus) */
    --font-highlight: #7dd3fc;/* Cor de destaque para textos importantes (azul vibrante) */
-
    /* Hover effects */
    --hover-bg: #2a2e39;      /* Fundo ao passar o mouse (cinza mais escuro) */
    --hover-font: #7dd3fc;    /* Cor da fonte ao passar o mouse (azul-claro vibrante) */
