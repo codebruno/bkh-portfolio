@@ -1,18 +1,20 @@
 :root {
-    /* Background colors */
-    --bg-page: #e0e5ec;       /* Cor de fundo para toda a página */
-    --bg-header: #2f3559;     /* Cor de fundo para o header/nav */
-    --bg-secondary: #384252;  /* Cor secundária para hover ou destaques */
-    --bg-highlight: #b9f1d6;  /* Cor de destaque (para elementos especiais) */
+   /* Background colors */
+   --bg-page: #1e1e2e;       /* Fundo da página (cinza escuro com tom azulado) */
+   --bg-header: #0b0f1e;     /* Fundo do header/nav (azul-marinho muito escuro) */
+   --bg-secondary: #2e3440;  /* Cor secundária para hover ou destaques (cinza intermediário) */
+   --bg-highlight: #7dd3fc;  /* Cor de destaque (azul-claro vibrante) */
 
-    /* Font colors */
-    --font-main: #fff9f9;     /* Cor principal da fonte (texto geral) */
-    --font-secondary: #74819d;/* Cor secundária da fonte (menus, etc.) */
-    --font-highlight: #b9f1d6;/* Cor de destaque para texto importante */
+   /* Font colors */
+   --font-main: #e5e9f0;     /* Fonte principal (branco suave, quase cinza) */
+   --font-secondary: #cbd5e1;/* Fonte secundária (cinza claro para subtítulos e menus) */
+   --font-highlight: #7dd3fc;/* Cor de destaque para textos importantes (azul vibrante) */
 
-    /* Hover effects */
-    --hover-bg: #3b3f49;      /* Cor de fundo ao passar o mouse */
-    --hover-font: #b9f1d6;    /* Cor da fonte ao passar o mouse */
+   /* Hover effects */
+   --hover-bg: #2a2e39;      /* Fundo ao passar o mouse (cinza mais escuro) */
+   --hover-font: #7dd3fc;    /* Cor da fonte ao passar o mouse (azul-claro vibrante) */
+
+
 }
 
 /* Global Styles */
@@ -280,7 +282,6 @@ img.img-fluid {
     margin-bottom: 15px;
     border: 2px solid var(--bg-highlight); /* Borda clara */
 }
-
 .founder-name {
     font-size: 1.2rem;
     font-weight: bold;
@@ -454,4 +455,79 @@ img.img-fluid {
 .scroll-to-top:hover {
     background-color: var(--hover-bg);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tabela de Preços */
+.pricing-section {
+    background-color: var(--bg-page);
+    padding: 3rem 0; /* Espaçamento vertical */
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: var(--bg-header);
+    color: var(--font-main);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.highlight {
+    background-color: var(--bg-highlight);
+    color: var(--bg-header);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--font-highlight);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    color: var(--font-secondary);
+}
+
+.pricing-features li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--bg-highlight);
+    color: var(--bg-header);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-font);
 }
