@@ -8,7 +8,8 @@
    /* Font colors */
    --font-main: #e5e9f0;     /* Fonte principal (branco suave, quase cinza) */
    --font-secondary: #cbd5e1;/* Fonte secundária (cinza claro para subtítulos e menus) */
-   --font-highlight: #7dd3fc;/* Cor de destaque para textos importantes (azul vibrante) */
+   --font-highlight: #7dd3fc;
+  
    /* Hover effects */
    --hover-bg: #2a2e39;      /* Fundo ao passar o mouse (cinza mais escuro) */
    --hover-font: #7dd3fc;    /* Cor da fonte ao passar o mouse (azul-claro vibrante) */
@@ -456,77 +457,98 @@ img.img-fluid {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Tabela de Preços */
-.pricing-section {
-    background-color: var(--bg-page);
-    padding: 3rem 0; /* Espaçamento vertical */
-    text-align: center;
+/* Seção de planos */
+.plans-section {
+    background-color: var(--bg-page); /* Cor de fundo da página */
 }
 
-.pricing-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.pricing-card {
-    background-color: var(--bg-header);
+.section-title {
+    font-size: 2.5rem;
     color: var(--font-main);
-    border-radius: 10px;
-    padding: 2rem;
-    width: 300px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.pricing-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+.plan-card {
+    background-color: var(--bg-secondary); /* Fundo escuro */
+    color: var(--font-main); /* Texto claro */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.pricing-card.highlight {
-    background-color: var(--bg-highlight);
-    color: var(--bg-header);
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.pricing-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.pricing-price {
-    font-size: 2rem;
+.plan-price {
+    color: var(--font-highlight); /* Destaque do preço */
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: var(--font-highlight);
 }
 
-.pricing-features {
+.plan-card ul {
+    padding-left: 0;
     list-style: none;
-    padding: 0;
-    margin: 0 0 2rem 0;
-    color: var(--font-secondary);
 }
 
-.pricing-features li {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+.plan-card ul li {
+    margin-bottom: 10px;
+    color: var(--font-secondary); /* Texto dos benefícios */
 }
 
-.btn-primary {
+
+.plan-card .btn {
     background-color: var(--bg-highlight);
-    color: var(--bg-header);
-    padding: 0.75rem 1.5rem;
+    color: var(--font-main);
     border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
+.plan-card .btn:hover {
     background-color: var(--hover-bg);
     color: var(--hover-font);
+}
+
+/* Destaque para o Plano de Manutenção */
+.featured-plan {
+    background-color: var(--bg-highlight); /* Fundo azul claro */
+    color: var(--bg-header); /* Texto mais escuro */
+}
+
+.featured-plan .card-title {
+    color: var(--bg-header); /* Azul-marinho muito escuro para o título */
+}
+
+.featured-plan .card-text {
+    color: var(--bg-secondary); /* Texto em cinza escuro */
+}
+
+.list-unstyled-1 ul li{
+    color: var(--bg-secondary); /* Texto em cinza escuro */
+}
+
+.featured-plan .plan-pricing li {
+    font-weight: bold;
+    color: var(--bg-header); /* Azul-marinho escuro para os preços */
+}
+
+/* Botão do Plano de Manutenção */
+.featured-plan .btn {
+    background-color: var(--bg-page); /* Botão com fundo cinza escuro */
+    color: var(--font-main); /* Texto claro */
+}
+
+/* Botão Hover */
+.featured-plan .btn:hover {
+    background-color: var(--bg-secondary); /* Muda para cinza mais claro no hover */
+    color: var(--hover-font); /* Texto claro ao passar o mouse */
+}
+
+/* Texto sobre atualizações mensais */
+.featured-plan .plan-details {
+    color: var(--bg-header); /* Azul-marinho muito escuro para destacar */
+    font-size: 1rem; /* Tamanho ajustado para leitura confortável */
+}
+
+/* Texto de atualização ao passar o mouse */
+.featured-plan .plan-details:hover {
+    color: var(--bg-secondary); /* Muda para cinza escuro no hover */
 }
